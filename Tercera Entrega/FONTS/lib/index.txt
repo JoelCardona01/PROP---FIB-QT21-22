@@ -1,0 +1,7 @@
+Aquest directori conte tots els .jar de les llibreries que em fet servir per al desenvolupament del nostre sistema.
+
+>hamcrest-core-1.3.jar i junit-4.13.2.jar: Aquestes llibreries es varen fer servir per als tests unitaris que vam generar a la primera entrega.
+>json-simple-1.1.1.jar: Aquesta llibreria la hem fet servir per tal de guardar i llegir les dades en fitxers amb extensio .json
+>javafx-sdk-17.0.1: Aquesta carpeta es la llibreria de javafx que es fa servir per a les pantalles grafiques, s'utilitza aquesta per Windows.
+>javafx-sdk-17.0.1_Ubuntu: Aquesta carpeta es la llibreria de javafx que es fa servir per a les pantalles grafiques, s'utilitza aquesta per Ubuntu (i versions
+			   x64 de Linux).
