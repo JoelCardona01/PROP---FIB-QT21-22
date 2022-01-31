@@ -1,0 +1,11 @@
+En aquest directori es troben les diferents carpetes del projecte, el README i un document de text amb les dades dels integrants del grup.
+
+>DOCS: conte la documentacio demanada a la normativa del projecte.
+
+>DATA: conte tots els arxius d'entrada i sortida necessaris per a poder executar el programa. Tots els archius d'entrada s'han 
+       de situar aqui per a que el programa els detecti.
+
+>EXE:  conte els diferents executables del programa, aixi com els .class de totes les classes i drivers a més a més dels fitxers fxml
+       de les vistes. Aqui trobaras l'exectuable del main per poder usar el programa i els executables per provar els drivers i proves amb Junit.
+
+>FONTS: conte tots els .java del programa.

@@ -1,0 +1,6 @@
+En aquest directori es troba la seguent documentacio:
+
+> RelacioClasses_Membre.pdf : conte una descripcio de com s'ha dividit la feina i quines classes ha fet cada integrant del grup.
+> ManualD'usuari.pdf : conte l'explicacio de les pantalles del sistema i com fer us d'aquest.
+> DocumentacioTesting.pdf : conte diferents jocs de prova que hem realitzat i les seves descripcions. A mes tambe conte un estudi de quina configuracio es la millor, es a dir,
+                            quina combinacio dels algorismes dona mes bons NDCG.

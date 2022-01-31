@@ -1,0 +1,27 @@
+En aquesta carpeta es troben els diferents fitxers de dades que necessita el nostre sistema.
+
+>centroides.json: El fitxer conte la informacio de l'ultim calcul dels centroides. Ens guardem aquesta informacio ja que el calcul d'aquesta te un cost bastant gran.
+>clusters.json: El fitxer conte la informacio dels clusters de l'ultim calcul de clusters fet. Ens guardem aquesta informacio ja que el calcul d'aquesta te un cost bastant gran.
+>configRecomanador.json: El fitxer conte tota la configuracio que l'administrador ha configurat per al calcul de recomanacions. Tambe es guarda l'ultim id d'usuari assignat, 
+				l'ultim id d'item assignat i l'ulitm id de recomanacio assignat.
+>ImatgesVistes: Es un directori que conte totes les imatges que s'han usat per a les vistes de les finestres grafiques que fa servir el nostre sistema.
+>inputqueries : Es el fitxer usat com a entrada per la funcionalitat de valorar recomanacions. Serveix com exemple de com
+		        s'ha d'estructurar i es el que estem usant per provar els algoritmes.
+>items.csv : Fitxer amb els items. Es imprescindible per l'us del programa.
+>itemsDB.json: Fitxer amb les dades dels items guardats en un fitxer json que ens facilitara la lectura en la seguent execucio.
+>ratings.db.csv : Fitxer amb els ratings. Es imprescindible per l'us del programa.
+>ratings.test.known.csv : Fitxer amb ratings de test coneguts. Es imprescindible per l'us de la funcionalitat
+		      de valorar la qualitat de recomanacions.
+>ratings.test.unknown.csv : Fitxer amb ratings de test desconeguts. S'han hagut de eliminar dues linies 
+			degut a un error que hi havia. (Hi havia per a un usuari uns items que ja estaven a known).
+			Es imprescindible per l'us de la funcionalitat de valorar la qualitat de recomanacions.
+>recomanacions.json: Es guarden les recomanacions que s'han fet per a cada usuari. Es una informacio que cada usuari podria volgue consultat, i per tant la guardem.
+>usuarisActius.json: Son tots els usuaris que s'han registrat en el nostre sistema. Inicialment nomes tindra la informacio del admin. Per a cada usuari es guarda		
+					un username, una contrasenya, un userId i un conjunt de valoracions que cada usuari ha fet.
+>usuarisRatings.json: Son els usuaris extrets del fitxer ratings.db. Ens guardem aquesta informacio en un fitxer .json perque ens facilitara la lectura en futures execucions.
+>Movielens i Series: Son fitxers de dades adicionals que podem fer servir per al nostre sistema. Aquests directoris contenen tres subdirectoris cadascun 
+					anomenats 250, 750 i 2250. (Hem decidit excloure el subdirectori 2250 de Movielens ja que, per al nostre sistema, no estava ben generat).
+					A cada un d'aquests tres subdirectoris hi podrem trobar els seguents fitxers: inputqueries.txt, items.csv, ratings.db, 
+					ratings.test.known.csv i ratings.test.unknown.csv. Aquests fitxers han sigut extrets del material proporcionat per l'assignatura tot i que alguns
+					d'aquests han sigut modificats ja que hi havia uns quants errors que no permitien el bon funcionament del sistema. A mes, els inputqueries.txt
+					han sigut generats a partir d'un algorisme generat per en Guillem Godoy.
