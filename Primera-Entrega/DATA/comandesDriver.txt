@@ -1,0 +1,16 @@
+readItems items
+readRatings ratings.db
+readKnown ratings.test.known
+readUnknown ratings.test.unknown
+recomanacioCollaborative 117838 5 2028 1923 318 527 923 858 1089 110 608 260
+recomanacioContentBased 117838 5 2028 1923 318 527 923 858 1089 110 608 260
+newUser Marina admin
+getUser Marina
+getValoracions Marina
+newValoracio Marina 592 4.5
+newValoracio Marina 5 1
+modificarValoracio Marina 5 4
+getValoracions Marina
+distanciaBasica 2 1.5 3 3 1.5
+distanciaEuclidiana 2 1.5 3 3 1.5
+end

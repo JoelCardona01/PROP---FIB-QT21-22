@@ -1,0 +1,9 @@
+En aquest directori es troba la seguent documentacio:
+
+>DiagramaCasosDUs.png : Una imatge amb el diagrama de casos d'us del sistema.
+>DiagramaCasosDUs : Un document de text amb la descripcio brief style dels casos d'us.
+>DiagramaDeClasses.png : Una imatge del diagrama de classes de domini en versio disseny.
+>DescripcioDiagramaClasses : Un document de text amb la descripcio de les diferents classes, atributs i operacions del diagrama de classes.
+>ED+Algorismes : Un document de text amb les descripcions dels algoritmes i estructures de dades usats en el programa.
+>RelacionsMembre : Un document de text amb la relacio membres/classes. El nostre tutor de laboratori ens va indicar que ni hi havia
+		   problema si una classe es progrmava entre una o dos persones mentres s'indiques. 

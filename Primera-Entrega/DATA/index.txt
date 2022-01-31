@@ -1,0 +1,13 @@
+En aquesta carpeta es troben els diferents fitxers de texts usats per l'entrada del algorisme.
+
+>comandesDriver: Exemple d'entrada possible per a l'execucio del Driver Complert
+>inputqueries : Es el fitxer usat com a entrada per la funcionalitat de valorar recomanacions. Serveix com exemple de com
+		        s'ha d'estructurar i es el que estem usant per provar els algoritmes.
+>items : Fitxer amb els items. Extret de movielens 250. Es imprescindible per l'us del programa.
+>ratings.db : Fitxer amb els ratings. Extret de movielens 250.  Es imprescindible per l'us del programa.
+>ratings.test.known : Fitxer amb ratings de test coneguts. Extret de movielens 250. Es imprescindible per l'us de la funcionalitat
+		      de valorar la qualitat de recomanacions.
+>ratings.test.unknown : Fitxer amb ratings de test desconeguts. Extret de movielens 250. S'han hagut de eliminar dues linies 
+			degut a un error que hi havia. (Hi havia per a un usuari uns items que ja estaven a known).
+			Es imprescindible per l'us de la funcionalitat de valorar la qualitat de recomanacions.
+>TutorialDriver : Tutorial de com redactar/generar els fitxers d'entrada per al driver complet. 

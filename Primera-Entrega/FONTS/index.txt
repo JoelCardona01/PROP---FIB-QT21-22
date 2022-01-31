@@ -1,0 +1,18 @@
+En aquest directori es troba el codi de les diferents classes i funcionalitats i el make a usar per compilar.
+El directori esta dividit en packages i conte tantes carpetes com packages te el sistema.
+
+>ControladorsDomini: Aquest directori conte el .java del controlador de domini, encarregat de comunicar-se amb 
+		     presentacio i dades.
+
+>Dades: Aquest directori conte tots els .java de la capa de Dades o Persistencia. De moment no s'ha treballat a fons
+	amb aquesta capa.
+
+>Domini: Aquest directori conte tots els .java de la capa de domini. S'hi troben els codis de les classes de model, codis 
+	 de classes auxiliars com strategy i el codi dels drivers.
+
+>Excepcions: Aquest directori conte els .java de les excepcions que hem creat per al projecte.
+
+>Presentacio: Aquest directori conte els .java de la capa de presentacio.
+
+>Tests: Aquesta carpeta conte els .java de les dues proves unitaries amb JUnit que s'han fet, per la classe DistanciaBasica
+	i DistanciaEuclidiana.
