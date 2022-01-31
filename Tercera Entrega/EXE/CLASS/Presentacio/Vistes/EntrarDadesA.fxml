@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="480.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentacio.Controladors.CtrlVistaEntrarDadesA">
+  <children>
+      <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="15.0" visible="false" />
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Separator maxWidth="-Infinity" prefWidth="15.0" visible="false" />
+            <Button fx:id="btnReturn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#returnA" prefHeight="45.0" prefWidth="45.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../DATA/ImatgesVistes/returnArrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </HBox>
+      <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="15.0" visible="false" />
+      <Label alignment="CENTER" maxHeight="-Infinity" prefHeight="4.0" prefWidth="602.0" text="Introdueix els noms dels fitxers que vols afegir sense l'extensió (.csv) i que es troben en la carpeta DATA:">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" prefWidth="23.0" visible="false" />
+      <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="40.0" prefWidth="640.0">
+         <children>
+            <Label text="Items:" />
+            <Separator prefWidth="15.0" visible="false" />
+            <TextField fx:id="nomFitxerItems" prefHeight="25.0" prefWidth="215.0" text="Movielens/250/items" />
+            <Separator prefWidth="15.0" visible="false" />
+            <Button fx:id="btnActualitzaItems" depthTest="ENABLE" minHeight="25.6" minWidth="85.0" mnemonicParsing="false" onAction="#actualitzaItems" prefHeight="25.6" prefWidth="85.0" style="-fx-background-color: #3498DB;" text="Actualitza" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Separator prefWidth="200.0" visible="false" />
+         </children>
+      </HBox>
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" prefWidth="23.0" visible="false" />
+      <Label alignment="CENTER" maxHeight="-Infinity" prefHeight="4.0" prefWidth="602.0" text="Compte! No actualitzis un fitxer que contingui ratings sense assegurar-te que els items valorats">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="176.0" maxHeight="-Infinity" prefHeight="4.0" prefWidth="602.0" text="son coherents amb els que apareixen al fitxer d'items.">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" prefWidth="23.0" visible="false" />
+      <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="40.0" prefWidth="640.0">
+         <children>
+            <Label text="Ratings:" />
+            <Separator prefWidth="15.0" visible="false" />
+            <TextField fx:id="nomFitxerRatings" prefHeight="25.0" prefWidth="215.0" text="Movielens/250/ratings.db" />
+            <Separator prefWidth="15.0" visible="false" />
+            <Button fx:id="btnActualitzaRatings" minHeight="25.6" minWidth="85.0" mnemonicParsing="false" onAction="#actualitzaRatings" prefHeight="25.6" prefWidth="85.0" style="-fx-background-color: #3498DB;" text="Actualitza" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="200.0" visible="false" />
+         </children>
+      </HBox>
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" prefWidth="23.0" visible="false" />
+      <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="40.0" prefWidth="640.0">
+         <children>
+            <Label text="Known:" />
+            <Separator prefWidth="15.0" visible="false" />
+            <TextField fx:id="nomFitxerKnown" prefHeight="25.0" prefWidth="215.0" text="Movielens/250/ratings.test.known" />
+            <Separator prefWidth="15.0" visible="false" />
+            <Button fx:id="btnActualitzaKnown" minHeight="25.6" minWidth="85.0" mnemonicParsing="false" onAction="#actualitzaKnown" prefHeight="25.6" prefWidth="85.0" style="-fx-background-color: #3498DB;" text="Actualitza" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="200.0" visible="false" />
+         </children>
+      </HBox>
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" prefWidth="23.0" visible="false" />
+      <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="40.0" prefWidth="640.0">
+         <children>
+            <Label text="Unknown:" />
+            <Separator prefWidth="15.0" visible="false" />
+            <TextField fx:id="nomFitxerUnknown" prefHeight="25.0" prefWidth="215.0" text="Movielens/250/ratings.test.unknown" />
+            <Separator prefWidth="15.0" visible="false" />
+            <Button fx:id="btnActualitzaUnkown" minHeight="25.6" minWidth="85.0" mnemonicParsing="false" onAction="#actualitzaUnknown" prefHeight="25.6" prefWidth="85.0" style="-fx-background-color: #3498DB;" text="Actualitza" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="200.0" visible="false" />
+         </children>
+      </HBox>
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" prefWidth="23.0" visible="false" />
+      <Button fx:id="btnActualitzaTots" mnemonicParsing="false" onAction="#actualitzaTots" style="-fx-background-color: #2EAE27;" text="Actualitzar tots" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" prefWidth="23.0" visible="false" />
+  </children>
+</VBox>

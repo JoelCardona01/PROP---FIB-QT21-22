@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="480.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentacio.Controladors.CtrlVistaGestioItemsA">
+  <children>
+      <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="15.0" visible="false" />
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Separator maxWidth="-Infinity" prefWidth="15.0" visible="false" />
+            <Button fx:id="btnReturn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#returnA" prefHeight="45.0" prefWidth="45.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../DATA/ImatgesVistes/returnArrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="640.0">
+         <children>
+            <ChoiceBox fx:id="chboxItemsCerca" prefWidth="150.0" />
+            <Separator prefWidth="15.0" visible="false" />
+            <TextField fx:id="nomItemCercat" promptText="Cerca..." />
+            <Separator prefWidth="15.0" visible="false" />
+            <Button fx:id="btnCercarItem" mnemonicParsing="false" onAction="#cercaItem" prefHeight="18.0" prefWidth="0.0">
+               <graphic>
+                  <ImageView blendMode="COLOR_BURN" fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../DATA/ImatgesVistes/lupa2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" prefWidth="23.0" visible="false" />
+      <TableView fx:id="taulaItems" prefHeight="328.0" prefWidth="768.0" />
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" prefWidth="23.0" visible="false" />
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="40.0" prefWidth="23.0" visible="false" />
+      <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="640.0">
+         <children>
+            <Button fx:id="btnAfegirItem" maxHeight="26.0" maxWidth="117.0" minHeight="26.0" minWidth="100.0" mnemonicParsing="false" onAction="#afegirItem" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #2EAE27;" text="Afegir un Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="15.0" visible="false" />
+            <Button fx:id="btnModificarItem" maxHeight="25.6" maxWidth="100.0" minHeight="26.0" minWidth="117.0" mnemonicParsing="false" onAction="#modificarItem" style="-fx-background-color: #3498DB;" text="Modificar Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Separator prefWidth="15.0" visible="false" />
+            <Button fx:id="btnEliminarItem" maxHeight="25.6" maxWidth="100.0" minHeight="26.0" minWidth="117.0" mnemonicParsing="false" onAction="#eliminarItem" style="-fx-background-color: red;" text="Eliminar Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="40.0" prefWidth="23.0" visible="false" />
+      <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="25.0" prefWidth="23.0" visible="false" />
+  </children>
+</VBox>
