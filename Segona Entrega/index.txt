@@ -1,0 +1,3 @@
+En aquest directori es troba la carpeta de la documentacio i un document de text amb les dades dels integrants del grup.
+
+>DOCS: conte la documentacio demanada a la normativa del projecte per a la segona entrega.

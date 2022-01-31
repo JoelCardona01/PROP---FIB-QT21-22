@@ -1,0 +1,9 @@
+En aquest directori es troba la seguent documentacio:
+
+>DiagramaDeClassesComplet.png: Imatge que conte el diagrama de classes complet, amb les 3 capes.
+>DiagramaDeClassesDades.png: Imatge que conte el diagrama de classes de la capa de dades
+>DiagramaDeClassesDomini.png: Imatge que conte el diagrama de classes de la capa de domini.
+>DiagramaDeClassesPresentacio.png: Imatge que conte el diagrama de classes de la capa de presentacio.
+
+-AVIS: Si s'obren les imatges amb Linux i alguna no carrega, utilitzar shotwell o similars, ja que amb el visualitzador per defecte no carrega a causa de l'alta resolucio de 
+       les imatges, la qual es tan alta per a poder fer zoom in dins aquestes.

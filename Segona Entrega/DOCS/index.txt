@@ -1,0 +1,5 @@
+En aquest directori es troba la seguent documentacio:
+
+>DescripcionsDeClasses: Un document pdf amb la descripcio de les diferents classes, atributs i operacions del diagrama de classes.
+>EstructuresiAlgorismes: Un document pdf amb les descripcions dels algoritmes i estructures de dades usats en el programa.
+>Diagrames de classes: Carpeta que conte el diagrama de classes dividit en capes (3 imatges diferents) i de forma completa.
