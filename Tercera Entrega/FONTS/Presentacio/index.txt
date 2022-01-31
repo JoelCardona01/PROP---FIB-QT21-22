@@ -1,0 +1,2 @@
+Aquesta carpeta conte totes les pantalles grafiques generades per al nostre sistema. Al subdirectori Controladors es poden veure les implementacions dels
+controladors de cada una de les pantalles que s'han creat. Tambe podem trobar el Controlador de presentacio. Per al subdirectori Controladors no hi afegirem un index.txt.
