@@ -1,0 +1,3 @@
+>CLASS : Directori amb tots els .class generats al compilar el make.sh i els fitxers .fxml de les vistes. Dins esta organitzat per packages.
+>Main.sh i  Main.bat: executables que permeten usar el programa en la seva totalitat. El .sh es per a linux, .bat per a windows.
+
