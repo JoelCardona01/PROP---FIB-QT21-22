@@ -1,0 +1,80 @@
+JOC DE PROVA CAIXA BLANCA
+Objecte de la prova:
+Amb aquest joc d’assaigs es proven els següents casos d’us:
+Consultar estrategia de distancia
+Canviar estrategia de distancia
+Consultar estrategia de filtering
+Canviar estrategia de filtering
+Consultar parametres d’algorismes
+Canviar k k-means
+Canviar k k-nearest 
+Valorar recomanacio
+Demanar recomanacio
+
+Fitxers necessaris:
+items.csv
+ratings.db.csv
+ratings.test.kown.csv
+ratings.test.unknown.csv
+inputqueries.txt
+
+Entrada del joc de proves:
+items.
+ratings.db
+rratings.test.known
+ratings.test.kown
+ratings.test.unknown
+s
+5
+3
+s
+3
+1
+s
+4
+a
+s
+3
+1
+s
+6
+s
+5
+1
+6
+s
+3
+inputquerieeeees.txt
+s
+3
+inputqueries.txt
+s
+1
+11221211 
+3
+s
+1
+143
+99999999
+s
+2
+143
+5
+1
+2
+143
+1
+2
+858
+296
+s
+8
+
+La missio d’aquest joc de proves es, apart de provar els casos d’us esmentats abans quan l’entrada es correcta, probar a ficar entrades incorrectes i veure si es captura aquesta entrada incorrecta
+ja sigui revisant la sintaxi de l’entrada o capturant les excepcions.
+En aquest joc de prova es comprova pels diferents casos d’us, si el sistema respon correctament a entrades d’items no existents, entrades d’usuaris no existents,
+demanar recomanacions on dins el conjunt d’items a operar hi ha una valoracio ja feta, noms de fitxers incorrectes, i entrades no valides a nivell sintactic,
+com entrar una lletra quan el que s’esta demanant es un numero.
+
+Operativa:
+Executem el ./Main.sh o ./Main.bat i anem introduint els valors que ens va demanant la terminal. El joc de prova esmentat s’ha d’anar introduint a ma ja que l’execucio es fa a traves d’un .sh o .bat.  

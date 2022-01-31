@@ -1,0 +1,8 @@
+Aquest directori conte els executables del DriverDistanciaBasica acompanyats de les descripcions dels seus jocs de
+prova.
+
+JocProvaBlancaDistanciaBasica> fitxer amb una entrada amb valors de la caixa blanca de la prova.
+JocProvaNegraDistanciaBasica> fitxer amb una entrada amb valors de la caixa negra de la prova.
+DriverDistanciaBasica.sh > executable per linux. Cal entrar a la terminal, en aquesta carpeta, ./DriverDistanciaBasica.sh
+DriverDistanciaBasica.bat > executable per windows. Cal entrar a la terminal, en aquesta carpeta, ./DriverDistanciaBasica.bat
+DescripcioJocsProvesDriverDistanciaBasica > document de text amb la descripcio dels jocs de proves del dirver.

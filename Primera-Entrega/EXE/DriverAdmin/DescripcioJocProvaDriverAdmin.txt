@@ -1,0 +1,17 @@
+Descripcio del joc de prova del JocProvaNegraDriverAdmin.txt
+
+Objecte de la prova: 
+	Casos d'us:
+		Es prova de crear un usuari del tipus Admin, canviar el nom, canviar la contrasenya, i comprovar que els canvis s'han realitzat correctament.
+
+Drivers:
+	El joc de proves esta construit per provar unicament el DriverAdmin. La seva missio es comprovar que la classe funciona correctament.
+
+Valors estudiats:
+	El joc de proves es tracta d'una caixa negra ja que provem que el sistema funcioni correctament, creant primer un Usuari del tipus administrador i despres realitzant les diverses funcionalitats que tenim disponibles.
+
+Operativa:
+	Alhora d'executar el driverAdmin introduirem el contingut del fitxer JocProvaNegraAdmin.txt (situat al directori EXE/DriverAdmin) manualment.
+
+Observacio:
+    Com que aquest driver es molt simple i prova funcionalitats basiques, no es pot fer cap joc de prova del tipus caixa blanca.

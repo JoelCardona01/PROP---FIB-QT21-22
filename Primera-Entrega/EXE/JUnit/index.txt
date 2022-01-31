@@ -1,0 +1,4 @@
+Aquest directori conte els fitxers necessaris per poder compilar les dues proves unitaries fetes amb Junit.
+
+Per tal de compilar cal entrar a la terminal, estant situats a aquesta carpeta, exeJunitBasica.sh o exeJunitBasica.bat 
+(segons si estas en linuxs usaras la primera, i en windows la segona), i de la mateixa manera amb exeJunitEuclidiana

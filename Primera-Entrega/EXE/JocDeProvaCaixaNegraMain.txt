@@ -1,0 +1,81 @@
+Joc de proves del programa principal
+
+								----JOC DE PROVA CAIXA NEGRA----
+Aquest joc de proves esta fet amb valors de la caixa negra, que no son els valors limits sino valors que un usuari sense coneixer el codi intern entraria.
+-Objecte de la prova:
+	Amb aquest joc d’assaigs es proven els següents casos d’us:
+	Consultar estrategia de distancia
+	Canviar estrategia de distancia
+	Consultar estrategia de filtering
+	Canviar estrategia de filtering
+	Consultar parametres d’algorismes
+	Canviar k k-means
+	Canviar k k-nearest 
+	Valorar recomanacio
+	Demanar recomanacio 
+
+-Fitxers necessaris:
+	items.csv
+	ratings.db.csv
+	ratings.test.kown.csv
+	ratings.test.unknown.csv
+	inputqueries.txt
+
+-Entrada del joc de proves (valors estudiats):
+
+	items
+	ratings.db
+	ratings.test.known
+	ratings.test.unknown
+	n
+	0
+	5
+	1
+	143
+	5
+	2
+	142
+	2
+	3
+	296
+	3578
+	s
+	inputqueries.txt
+	s
+	4
+	s
+	2
+	s
+	4
+	n
+	s
+	5
+	s	
+	1
+	s
+	5
+	n
+	s
+	6
+	s
+	2
+	6
+	s
+	6
+	n
+	s
+	7
+	s
+	8
+
+
+La missio d’aquests valors es veure el bon funcionament del programa en general passant per totes les funcionalitats d’aquest. 
+Per exemple una de les missions es veure que si es produeixen canvis en els parametres dels algorismes o en les estrategies i es consulta de nou el valor, 
+aquest realment ha canviat. Veure tambe que si demanem una recomanacio la sortida va acord amb l’entrada indicada. Veure en general que una entrada que podria fer 
+un usuari qualsevol no dona errors en el sistema no controlats.
+
+
+Operativa:
+Executem el ./Main.sh o ./Main.bat i anem introduint els valors que ens va demanant la terminal. El joc de prova esmentat s’ha d’anar introduint a ma ja que 
+l’execucio es fa a traves d’un .sh o .bat.  
+

@@ -1,0 +1,7 @@
+Aquest directori conte els executables del DriverAdmin acompanyats de les descripcions dels seus jocs de
+prova.
+
+JocProvaNegraDriverAdmin> fitxer amb una entrada amb valors de la caixa negra de la prova.
+DriverAdmin.sh > executable per linux. Cal entrar a la terminal, en aquesta carpeta, ./DriverAdmin.sh
+DriverAdmin.bat > executable per windows. Cal entrar a la terminal, en aquesta carpeta, ./DriverAdmin.bat
+DescripcioJocProvaDriverAdmin > document de text amb la descripcio dels jocs de proves del dirver.

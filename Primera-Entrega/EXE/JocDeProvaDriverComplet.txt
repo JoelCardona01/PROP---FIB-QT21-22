@@ -1,0 +1,118 @@
+								
+								----Joc de prova de “DriverComplet”----
+
+(fitxer sense accents per evitar problemes de compatibilitat).
+
+									--Descripcio Driver--
+
+Aquest driver rep per parametre un nom d’un fitxer amb diferents comandes, que llegira i executara amb la finalitat de provar les diferents classes a provar.
+
+
+							--Funcionalitats a dur a terme i classes que proven--
+
+readItems: L’usuari indica al sistema mitjançant un fitxer el conjunt d’items que vol que aquest llegeixi, el sistema el llegeix i interpreta el contingut d’aquest
+els objectes “item”. Es prova el bon funcionament de la classe Item, Atribut, Columna, CtrlDomini, CtrlItemFile.
+
+readRatings: L’usuari indica al sistema mitjançant un fitxer el conjunt de ratings que vol que aquest llegeixi, el sistema el llegeix, i interpreta el contingut 
+d’aquest creant els objectes “Valoracio” i “UsuariActiu” i associant-los amb les seves relacions corresponents. Es prova el bon funcionament de la classe UsuariActiu, 
+Valoracio, CtrlDomini, CtrlRatingsFile.
+
+readKnown:   L’usuari indica al sistema mitjançant un fitxer el conjunt de ratings que vol que aquest llegeixi, el sistema el llegeix, i interpreta el contingut 
+d’aquest creant els objectes “Valoracio” i “UsuariActiu” i associant-los amb les seves relacions. Diferenciant-los, aixo si, del conjunt de ratings anterior. 
+Es prova les mateixes classes que amb readRatings.
+
+readUnknown: L’usuari indica al sistema mitjançant un fitxer el conjunt de ratings que vol que aquest llegeixi, que serà per valorar com es de capaç el sistema de 
+transformar els ratings en aquest fitxer un cop demanades les recomanacions corresponents, el sistema el llegeix, i interpreta el contingut d’aquest creant els 
+objectes “Valoracio” i “UsuariActiu” i associant-los amb les seves relacions. Es prova les mateixes classes que amb readRatings.
+
+newUser: L’usuari indica un “username” i una “password” i el sistema crea un usuari amb aquests valors. Es prova la classe UsuariActiu.
+
+getUser: L’usuari indica al sistema l’username del Usuari del que vol saber si hi es al sistema o no, i el sistema informa al usuari conforme existeix o no existeix. 
+Es prova la classe UsuariActiu.
+
+getValoracions: L’usuari indica al sistema de quin usuari vol saber les seves valoracions donant-li el “username” d’aquest, i el sistema mostra un conjunt de parelles 
+(“identificador del item”, “puntuació per aquest item”). Es prova la classe UsuariActiu.
+
+modificarValoracio: L’usuari indica un usuari identificant-lo pel ser “username”, un item identificant-lo pel seu identifcador (idItem) i la nova nota que vol posar 
+i el sistema canvia la valoració d’aquest usuari per aquest item. Es proba la classe UsuariActiu i Valoracio.
+
+recomanacioCollaborative: L’usuari indica al sistema un “username” i el nombre d’items que vol que li recomani i el conjunt d’items a estudiar i el sistema recomanarà 
+utilitzant l’algorisme Collaborative Filtering un conjunt d’items a l’usuari. Prova les classes CtrlDomini, Admin, Recomanacio, CollaborativeFiltering.
+
+recomanacioContentBased: L’usuari indica al sistema un “username” i el nombre d’items que vol que li recomani i el conjunt d’items a estudiar i el sistema recomanarà 
+utilitzant l’algorisme Content Based Filtering un conjunt d’items a l’usuari  identificat per “username”. Prova les classes CtrlDomini, Admin, Recomanacio, 
+ContentBasedFiltering.
+
+distanciaBasica: L’usuari indica primerament, les dimensions dels punts de les coordenades que s’introduiran, i, seguidament, dos punts donant les coordenades 
+d’aquests. Finalment el sistema mostrara la distància “basica” entre aquests dos punts. Prova la classe DistanciaBasica.
+
+distanciaEuclidiana: L’usuari indica primerament, les dimensions dels punts de les coordenades que s’introduiran, i, seguidament, dos punts donant les coordenades 
+d’aquests. Finalment el sistema mostrarà la distància “Euclidiana” entre aquests dos punts. Prova la classe DistanciaEuclidiana.
+
+
+									--Fitxers necessaris:--
+items.csv
+ratings.db.csv
+ratings.test.kown.csv
+ratings.test.unknown.csv
+fitxerDeComandesDriver.txt
+
+									--Valors estudiats:--
+(els següents valors pertanyen a la caixa negra, cap busca el cas límit).
+
+readItems items 
+-Missio: Veure que es llegeixen correctament els items.
+
+readRatings ratings.db
+-Missio: Veure que es llegeixen correctament els ratings.
+
+readKnown ratings.test.known
+-Missio: Veure que es llegeixen correctament els ratings de known.
+
+readUnknown ratings.test.unknown
+-Missio: Veure que es llegeixen correctament els ratings de unknwon.
+
+recomanacioCollaborative 117838 5  2028 1923 318 527 923 858 1089 110 608 260
+-Missio: Veure el correcte funcionament de l’algorisme Collaborative Filtering.
+-Valor a esperar com a sortida: 5 id d’items en una mateixa linia.
+
+recomanacioContentBased 117838 5 2028 1923 318 527 923 858 1089 110 608 260
+-Missio: Veure el correcte funcionament de l’algorisme Content Based Filtering.
+-Valor a esperar com a sortida: 5 id d’items en una mateixa linia.
+
+newUser Marina admin
+-Missio: Veure que es crea correctament un usuari.
+
+getUser Marina
+-Missio: Veure que el sistema és capaç de trobar un usuari existent en aquest.
+-Valor esperat de sortida: S’ha trobat l’usuari amb nom Marina
+
+getValoracions Marina
+-Missio: Veure que el sistema és capaç de trobar les valoracions d’un usuari.
+-Valor esperat de sortida: Missatge conforme no hi ha valoracions
+
+newValoracio Marina 592 4.5
+-Missio: Veure que el sistema és capaç de crear valoracions per a un usuari i afegir-les al atribut corresponent de UsuariActiu.
+
+modificarValoracio Marina 5 4
+-Missio: Veure que el sistema és capaç de modificar una Valoració.
+
+getValoracions Marina
+-Missio: Veure que el sistema ha modificat correctament la Valoració.
+-Valor esperat de sortida: Item 5 nota 4, item 592 nota 4.5
+
+distanciaBasica 2 1.5 3 3 1.5
+-Missio: Veure que el sistema calcula correctament la distància entre dos punts 
+seguint l’estratègia “bàsica”.
+-Valor esperat de sortida: 1.5
+
+distanciaEuclidiana 2 1.5 3 3 1.5
+-Missio: Veure que el sistema calcula correctament la distància entre dos punts seguint l’estratègia “Euclidiana”.
+-Valor esperat de sortida: 2.1213
+
+										--Resolucio--
+S’ha observat que el sistema respon com s’esperava a les consultes esmentades anteriorment. Sense errors d’execució.
+
+										--Operativa--
+Executem el ./DriverComplet.sh o ./DriverComplet.bat i ens demanara el nom del fitxer d’on llegir les comandes. El fitxer que s’introdueixi haura d’estar al directori 
+DATA. Aquest fitxer ha d’estar escrit seguint el fitxer TutorialDriver.txt. El joc de prova esmentat en aquest document es troba en el fitxer comandesDriver.txt. 

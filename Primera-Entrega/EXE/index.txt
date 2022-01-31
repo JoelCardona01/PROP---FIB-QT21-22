@@ -1,0 +1,9 @@
+>CLASS : Directori amb tots els .class generats al compilar el make.sh. Dins esta organitzat per packages.
+>Diferents carpetes de drivers: Contenen a dins els executables (.sh o .bat) i els jocs de prova amb la descripcio corresponent.
+>JocsDeProvaMain: Document on s'explica els diferents jocs de prova que s'han usat per al programa (exectuant el main).
+>JocDeProvaDriverComplet: Document on s'explica el joc de prova que s'ha usat per provar el driver.
+>JocDeProvaCaixaNegraMain: Document on s'explica el joc de prova de caixa negra que s'ha usat per provar el Main.
+>JocDeProvaCaixaBlancaMain: Document on s'explica el joc de prova de caixa blanca que s'ha usat per provar el Main.
+>Main.sh i  Main.bat: executables que permeten usar el programa en la seva totalitat. El .sh es per a linux, .bat per a windows.
+>DriverComplet.sh i DriverComplet.bat: executables que permeten executar un driver que prova totes les classes reben per entrada un fitxer amb comandes. 
+

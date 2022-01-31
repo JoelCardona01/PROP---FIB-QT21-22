@@ -1,0 +1,36 @@
+Descripcio del joc de prova del JocProvaNegraDistanciaEuclidiana.txt
+
+Objecte de la prova:
+	Casos d'us:
+		Es prova de calcular la distancia euclidiana entre dos vectors de doubles amb el mateix nombre de dimensons i es compara el resultat obtingut amb la distancia real.
+
+Drivers:
+	El joc de proves esta construit per provar unicament el DriverDistanciaEuclidiana. La seva missio es comprovar que la classe funciona correctament.
+
+Valors estudiats:
+	El joc de proves es tracta d'una caixa negra ja que provem que el sistema funcioni correctament sense tenir en compte com esta implementat, calculant la distancia entre dos punts
+	iguals, dos punts diferents, una distancia on algun dels punts es l'origen de coordenades i entre coordenades que contenen valors negatius. A mes, abans de començar es comprova
+	que l'estrategia de calcul de distancia	realment sigui el desitjat (DistanciaEuclidiana).
+
+Operativa:
+	A l'hora d'executar el DriverDistanciaEuclidiana introduirem el contingut del fitxer JocProvaNegraDistanciaEuclidiana.txt (situat al directori EXE/DriverDistanciaEuclidiana) manualment.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Descripcio del joc de prova del JocProvaBlancaDistanciaEuclidiana.txt
+
+Objecte de la prova:
+	Casos d'us:
+		Es prova de calcular la distancia euclidiana entre dos vectors de doubles i es compara el resultat obtingut amb la distancia real.
+
+Drivers:
+	El joc de proves esta construit per provar unicament el DriverDistanciaEuclidiana. La seva missio es comprovar que passa quan l'entrada son dos punts amb diferent nombre de dimensions.
+
+Valors estudiats:
+	El joc de proves es tracta d'una caixa blanca ja que provem que el sistema tenint en compte la seva implementacio, calculant la distancia entre dos punts de diferent
+	nombre de dimensions. Abans de començar es comprova que l'estrategia de calcul de distancia realment sigui el desitjat (DistanciaEuclidiana). S'ha de comprovar que el calcul de
+	distancia no es pot calcular (retorna null).
+
+Operativa:
+	Alhora d'executar el DriverDistanciaEuclidiana introduirem el contingut del fitxer JocProvaBlancaDistanciaEuclidiana.txt (situat al directori EXE/DriverDistanciaEuclidiana) manualment.
+	

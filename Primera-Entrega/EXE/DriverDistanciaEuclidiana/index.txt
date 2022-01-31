@@ -1,0 +1,8 @@
+Aquest directori conte els executables del DriverDistanciaEuclidiana acompanyats de les descripcions dels seus jocs de
+prova.
+
+JocProvaBlancaDistanciaEuclidiana > fitxer amb una entrada amb valors de la caixa blanca de la prova.
+JocProvaNegraDistanciaEuclidiana > fitxer amb una entrada amb valors de la caixa negra de la prova.
+DriverDistanciaEuclidiana.sh > executable per linux. Cal entrar a la terminal, en aquesta carpeta, ./DriverDistanciaEuclidiana.sh
+DriverDistanciaEuclidiana.bat > executable per windows. Cal entrar a la terminal, en aquesta carpeta, ./DriverDistanciaEuclidiana.bat
+DescripcioJocsProvesDriverDistanciaEuclidiana > document de text amb la descripcio dels jocs de proves del dirver.
