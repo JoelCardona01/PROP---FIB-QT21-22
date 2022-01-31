@@ -1,0 +1,2 @@
+En aquest directori trobem les diferents excepecions que em creat per al nostre sistema. No s'explica que fa cada classe exactament ja que amb el nom del fitxer
+ja s'enten que es el que comprova cadascuna

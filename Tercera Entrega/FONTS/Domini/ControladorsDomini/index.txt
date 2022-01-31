@@ -1,0 +1,3 @@
+Aquest directori te la classe CtrlDomini.
+
+>CtrlDomini.java: Aquesta classe rep crides de capa presentacio i les gestiona fent crides a model o a la capa de dades.

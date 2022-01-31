@@ -1,0 +1,8 @@
+En aquest directori tenim interficies que s'implementen al package de Dades. Tambe tenim una factoria que creara les instancies de les clases que implementen les interficies i creara la instancia de CtrlDomini.
+
+>CtrlClusters.java: Interficie que implementa la classe CtrlClustersFile a la capa de Domini.
+>CtrlEstat.java: Interficie que implementa la classe CtrlEstatFile a la capa de Domini.
+>CtrlItem.java: Interficie que implementa la classe CtrlItemFile a la capa de Domini.
+>CtrlRating.java: Interficie que implementa la classe CtrlRatingsFile a la capa de Domini.
+>CtrlRecomanacions.java: Interficie que implementa la classe CtrlRecomanacionsFile a la capa de Domini.
+>CtrlFactoriaCtrl.java: Classe que genera i retorna les instancies que implementen les estrategies o el CtrlDomini.

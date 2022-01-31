@@ -1,0 +1,1 @@
+En aquest directori tenim tot el codi generat per al model. D'aquest directori no explicarem que fa cada classe.

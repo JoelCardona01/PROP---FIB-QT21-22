@@ -1,0 +1,10 @@
+Aquest directori conte tot el codi generat per a la capa de Domini.
+
+>Model: Aquesta carpeta conte tota la logica del sistema, les clases del diagrama de clases i les instancies de les clases del model.
+
+>ControladorsDomini: Aquest directori conte el .java del controlador de domini, encarregat de comunicar-se amb 
+     presentacio i dades.
+
+>DataInterface: Aquest directori conte els .java de les interficies amb els metodes que implementaran les clases de la capa de dades i la factoria que
+     creara les seves instancies. Aquest package s'ha creat per tal de disminuir l'acoplament entre capes ja que 
+ 	 aixo ens garanteix un millor disseny de l'arquitectura del sistema.

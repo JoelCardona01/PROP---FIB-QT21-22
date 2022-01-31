@@ -1,0 +1,9 @@
+Aquest directori te totes les clases que s'encarreguen de la lectura i escrpitura a fitxers
+
+>CtrlClustersFile.java: S'encarrega de llegir i escriure als fitxers clusters.json i centroides.json situats al subdirectori DATA. 
+>CtrlEstatFile.java: S'encarrega de llegir i escriure al fitxer configRecomanador.json situat al subdirectori DATA. Te la configuracio configurada per a l'admin
+>CtrlItemFile.java: S'encarrega de llegir i escriure als fitxers items.csv i itemsDB.json situats al subdirectori DATA.
+>CtrlRatingsFile.java: S'encarrega de llegir i escriure als fitxers ratings.csv, ratings.db.csv, ratings.test.known.csv, ratings.test.unknown.csv i a
+                        usuarisRatings.json al subdirectori DATA. 
+>CtrlRecomanacionsFile.java: S'encarrega de la lectura i escriptura del fitxer recomanacions.json situat al subdirectori DATA.
+>CtrlUsuarisActiusFile.java: S'encarrega de la lectura i escriptura del fitxer usuarisActius.json situat al subdirectori DATA.

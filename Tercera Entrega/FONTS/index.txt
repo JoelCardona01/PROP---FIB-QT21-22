@@ -1,0 +1,31 @@
+En aquest directori es troba el codi de les diferents classes i funcionalitats i el make a usar per compilar i executar.
+El directori esta dividit en packages i conte tantes carpetes com packages te el sistema. Tambe hi ha una carpeta amb les llibreries necessaries per al us del programa
+
+
+>Dades: Aquest directori conte tots els .java de la capa de Dades o Persistencia. 
+
+>Domini: Aquest directori conte tots els .java de la capa de domini. S'hi troben els codis de les classes de model, els codis de DataInterface i 
+		 el codi de ControladorsDomini
+	 
+	 >Model: Aquesta carpeta conte tota la logica del sistema, les clases del diagrama de clases i les instancies de les clases del model.
+
+	 >ControladorsDomini: Aquest directori conte el .java del controlador de domini, encarregat de comunicar-se amb 
+		     presentacio i dades.
+
+	 >DataInterface: Aquest directori conte els .java de les interficies amb els metodes que implementaran les clases de la capa de dades i la factoria que
+	 		creara les seves instancies. Aquest package s'ha creat per tal de disminuir l'acoplament entre capes ja que 
+			aixo ens garanteix un millor disseny de l'arquitectura del sistema.
+
+>Excepcions: Aquest directori conte els .java de les excepcions que hem creat per al projecte.
+
+>Presentacio: Aquest directori conte els .java de la capa de presentacio.
+	 >Controladors: Inclou les clases .java que generen les pantalles grafiques i el controlador presentacio.
+
+>javafx-sdk-17.0.1 i javafx-sdk-17.0.1_Ubuntu: Aquests directoris contenen les llibreries grafiques usades per a generar les interficies grafiques del nostre
+	projecte.
+
+>lib: Aquest directori conte altres llibrerires usades per al funcionament del nostre sistema. 
+
+>make.bat i make.sh: executables que compilen les clases i envien els .class a la carpeta EXE. IMPORTANT: make.bat per Windows i make.sh per a Linux
+
+>makeAndEXE.bat i makeAndExe.sh: Son executables que s'encarreguen de compilar i executar el programa directament. makeAndEXE.bat per Windows i makeAndEXE.sh per a Linux
